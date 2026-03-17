@@ -29,7 +29,7 @@ jobs:
           path: target/checkstyle-result.xml
 
       - name: Run Maven Test and JaCoCo
-        run: mvn test jacoco:report
+        run: mvn clean test jacoco:report
 
       - name: Upload JaCoCo Report
         uses: actions/upload-artifact@v4
